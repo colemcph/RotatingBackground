@@ -1,0 +1,26 @@
+{
+    // Required
+    "manifest_version": 3,
+    "name": "Rotating Background",
+    "version": "1.0",
+    "description" : "Add a number of roating images for your google chrome tab background",
+    "icons" : {
+        "16" : "/images/icon.png",
+        "48" : "/images/icon48.png",
+        "128" : "/images/icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16" : "/images/icon.pn",
+            "48" : "/images/icon48.png",
+            "128" : "/images/icon128.png"
+        }
+    
+    },
+    "content_scripts" : [{
+        "matches" : ["https://www.google.com/*"],
+        "css" : ["main.css"]
+        
+    }]
+
+    }
